@@ -6,7 +6,7 @@
         <div class="image-container">
             <!-- Once we have the data we can use {{}} to bind that data to our view -->
             <!--Add the image link from the data here. Remember to put something in the alt tag, perhaps the name of the city-->
-            <img src="{{item.image}}" alt="NewYork,Paris,Sydney">
+            <img ng-src="{{item.image}}" alt="{{item.city}}">
         </div>
         <div class="location-inner-left">
             <!-- Now we can start to extract the data and bind it to our different elements here-->

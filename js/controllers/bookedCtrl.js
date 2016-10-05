@@ -1,10 +1,11 @@
 angular.module('devmtnTravel')
 .controller('bookedCtrl', function($scope, $state, mainSrv) {
-  var bookedId = $state.params.id
+  var bookedId = $state.params.id;
+  var info = mainSrv.travelInfo;
 
-  for (var i = 0; i < mainSrv.travelInfo.length; i++) {
-    if (bookedId == mainSrv.travelInfo[i].id) {
-      $scope.bookedData = mainSrv.travelInfo[i]
+  for (var i = 0; i < info.length; i++) {
+    if (bookedId == info[i].id) {
+      $scope.bookedData = info[i];
     }
   }
 

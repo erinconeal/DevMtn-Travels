@@ -4,7 +4,7 @@
     <section ng-repeat="item in packageData" class="package-card">
         <!-- Once we have the data we can use {{}} to bind that data to our view -->
         <!--Add the image link from the data here. Remember to put something in the alt tag, perhaps the name of the city-->
-        <img src="{{item.image}}" alt="New York, Paris, Sydney">
+        <img ng-src="{{item.image}}" alt="{{item.city}}">
         <!-- Now we can start to extract the data and bind it to our different elements here-->
         <h6> <!--The city name goes here--> {{item.city}}</h6>
         <h1><!--The country name goes here-->{{item.country}}</h1>
